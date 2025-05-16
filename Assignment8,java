@@ -1,0 +1,20 @@
+public class User {
+    private String name;
+    private String email;
+}
+
+public class Transaction {
+    private double amount;
+    private String type; // Income or Expense
+    private String category; // e.g., Food, Rent
+    private Date date;
+}
+
+public class Budget {
+    private double totalIncome;
+    private double totalExpenses;
+    private double balance;
+}
+
+public class Report {
+}
