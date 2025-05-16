@@ -17,17 +17,23 @@ public class Transaction {
         return amount;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
-    }
-
     public String getType() {
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public String getCategory() {
+        return category;
     }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public String toCSV() {
+        return amount + "," + type + "," + category + "," + date.toString();
+    }
+}
+
 
     public String getCategory() {
         return category;
